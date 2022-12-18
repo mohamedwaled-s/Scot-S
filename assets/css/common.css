@@ -1,0 +1,262 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.font_inter {
+  font-family: "Inter";
+}
+
+.font_poppins {
+  font-family: "Poppins";
+}
+
+.font_dm {
+  font-family: "DM Sans";
+}
+
+html {
+  background: #fffcf3;
+}
+
+.w_half {
+  width: 50%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.main_container {
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.all_btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #535353;
+  padding: 16px 35px;
+  border: solid 1px #fedd00;
+  border-radius: 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.main_btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #f5faff;
+  padding: 16.5px 34px;
+  background: black;
+  text-decoration: none !important;
+  display: inline-block;
+  border-radius: 10px;
+  width: max-content;
+}
+
+.main_btn:hover {
+  background: #ff5e00;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.justify_center {
+  justify-content: center;
+}
+
+.justify_around {
+  justify-content: space-around;
+}
+
+.justify_between {
+  justify-content: space-between;
+}
+
+.align_center {
+  align-items: center;
+}
+
+/* Header */
+.nav_items a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #535353;
+  margin-left: 35px;
+  text-decoration: none;
+}
+
+#menu {
+  display: none;
+}
+
+.nav_box {
+  padding: 35px 100px 60px;
+}
+
+.logo_box img {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 270px;
+  height: 80px;
+  background: #fedd00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #16161a;
+}
+
+@media screen and (max-width: 425px) {
+  .logo_box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+
+  .nav_box {
+    padding: 25px 20px;
+  }
+
+  .info_right_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .nav_items {
+    display: none;
+  }
+
+  #burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    overflow: visible;
+    position: relative;
+    z-index: 100;
+  }
+
+  #burger-menu span,
+  #burger-menu span:before,
+  #burger-menu span:after {
+    background: black;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+
+  #burger-menu span:before,
+  #burger-menu span:after {
+    content: "";
+  }
+
+  #burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+
+  #burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+  }
+
+  #burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+  }
+
+  #burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+  }
+
+  #burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+  }
+
+  #burger-menu.close span:after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+  }
+
+  #menu {
+    z-index: 100;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    /* top: 100px; */
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+    display: block;
+  }
+
+  #menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    /* padding-top: 100px; */
+    background: white;
+  }
+
+  #menu li {
+    list-style: none;
+  }
+
+  #menu a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+}
