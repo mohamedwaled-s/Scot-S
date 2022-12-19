@@ -204,11 +204,10 @@
 }
 
 .sectionThree {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(15.1%, rgba(247, 151, 30, 0.1072)), color-stop(15.11%, rgba(247, 152, 30, 0.107669)), color-stop(73.77%, rgba(255, 210, 0, 0.16)));
-  background: linear-gradient(0deg, rgba(247, 151, 30, 0.1072) 15.1%, rgba(247, 152, 30, 0.107669) 15.11%, rgba(255, 210, 0, 0.16) 73.77%);
   border-radius: 30px;
   position: relative;
   margin-top: 50px;
+  background-color: transparent;
 }
 .sectionThree .swiper {
   width: 100%;
@@ -217,6 +216,8 @@
   width: 100% !important;
 }
 .sectionThree .swiper .swiper-wrapper .swiper-slide .content {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(15.1%, rgba(247, 151, 30, 0.1072)), color-stop(15.11%, rgba(247, 152, 30, 0.107669)), color-stop(73.77%, rgba(255, 210, 0, 0.16)));
+  background: linear-gradient(0deg, rgba(247, 151, 30, 0.1072) 15.1%, rgba(247, 152, 30, 0.107669) 15.11%, rgba(255, 210, 0, 0.16) 73.77%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,7 +431,7 @@
     font-weight: 700;
   }
   .sectionThree {
-    position: unset !important;
+    height: 450px;
   }
   .sectionThree .swiper {
     width: 100% !important;
@@ -442,6 +443,7 @@
     width: 100% !important;
   }
   .sectionThree .swiper .swiper-wrapper .swiper-slide .content {
+    height: 404px;
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -464,6 +466,9 @@
   }
   .sectionThree .swiper .swiper-wrapper .swiper-slide .content .imgContainer .sliderImg {
     max-width: 100%;
+    height: 284px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .sectionThree .swiper .swiper-wrapper .swiper-slide .content .imgContainer .overText {
     padding: 25% 10%;
@@ -497,7 +502,7 @@
   }
   .sectionThree .swiper-pagination {
     position: absolute !important;
-    bottom: -450px;
+    bottom: 0px;
     width: 85%;
     left: 50%;
     -webkit-transform: translateX(-50%);

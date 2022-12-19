@@ -157,21 +157,22 @@
   }
 }
 .sectionThree {
-  background: linear-gradient(
-    0deg,
-    rgba(247, 151, 30, 0.1072) 15.1%,
-    rgba(247, 152, 30, 0.107669) 15.11%,
-    rgba(255, 210, 0, 0.16) 73.77%
-  );
   border-radius: 30px;
   position: relative;
   margin-top: 50px;
+  background-color: transparent;
   .swiper {
     width: 100%;
     .swiper-wrapper {
       .swiper-slide {
         width: 100% !important;
         .content {
+          background: linear-gradient(
+            0deg,
+            rgba(247, 151, 30, 0.1072) 15.1%,
+            rgba(247, 152, 30, 0.107669) 15.11%,
+            rgba(255, 210, 0, 0.16) 73.77%
+          );
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -359,7 +360,7 @@
     }
   }
   .sectionThree {
-    position: unset !important;
+    height: 450px;
     .swiper {
       width: 100% !important;
       .swiper-wrapper {
@@ -367,6 +368,7 @@
         .swiper-slide {
           width: 100% !important;
           .content {
+            height: 404px;
             overflow: hidden;
             display: flex;
             align-items: center;
@@ -378,6 +380,8 @@
               width: 343px !important;
               .sliderImg {
                 max-width: 100%;
+                height: 284px;
+                object-fit: cover;
               }
               .overText {
                 padding: 25% 10%;
@@ -416,7 +420,7 @@
     }
     .swiper-pagination {
       position: absolute !important;
-      bottom: -450px;
+      bottom: 0px;
       width: 85%;
       left: 50%;
       transform: translateX(-50%);
