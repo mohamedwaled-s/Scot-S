@@ -289,6 +289,23 @@
   z-index: 1;
 } */
 
+.namem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.settingbox {
+  width: 350px !important;
+}
+
+@media (max-width: 769px) {
+  .settingbox {
+    width: 170px !important;
+  }
+}
+
 @media (max-width: 769px) {
   .swiper {
     width: 90% !important;
@@ -347,6 +364,8 @@ body {
   }
   .description_text_title {
     font-size: 14px;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   .description_text_content {
     font-size: 12px !important;
@@ -881,7 +900,7 @@ body {
 /*General styles for body*/
 body {
   margin: 0;
-  padding: 3em 0;
+  padding: 1em 0 0 0;
   font-family: Helvetica, Arial, sans-serif;
   background: #eee;
   color: #222;

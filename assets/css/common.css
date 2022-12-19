@@ -105,7 +105,7 @@ h1 {
 }
 
 .nav_box {
-  padding: 35px 100px 60px;
+  padding: 0px 70px 1em;
 }
 
 .logo_box img {
@@ -118,7 +118,7 @@ h1 {
 /* Footer */
 
 .footer {
-  margin-top: 270px;
+  margin-top: 90px;
   height: 80px;
   background: #fedd00;
   display: flex;
@@ -147,7 +147,7 @@ h1 {
   }
 
   .nav_box {
-    padding: 25px 20px;
+    padding: 20px 40px;
   }
 
   .info_right_text {

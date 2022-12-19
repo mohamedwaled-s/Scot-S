@@ -26,13 +26,30 @@ var swiper_dropping = new Swiper(".mySwiper_dropping", {
     770: {
       slidesPerView: 3,
       spaceBetween: 30,
-    //   slidesPerView: 2.5,
+      //   slidesPerView: 2.5,
     },
     320: {
       slidesPerView: 2,
       spaceBetween: 30,
       slidesPerView: 1.3,
     },
+  },
+});
+
+var swiper_dropfilled = new Swiper(".mySwiper_dropfilled", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
   },
 });
 
