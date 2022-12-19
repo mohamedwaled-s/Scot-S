@@ -213,13 +213,13 @@
 .sliderPage.two .overlay {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(255, 0, 0, 18.72%), rgba(0, 0, 0, 0.87));
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
   position: absolute;
   z-index: 2;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(5px); */
 }
 .sliderPage.two .overlay2 {
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -228,16 +228,19 @@
 }
 
 .dropping_conent_item.two .overlay {
-  background: linear-gradient(rgba(255, 0, 0, 18.72%), rgba(0, 0, 0, 0.87));
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
   position: absolute;
   z-index: 2;
-  backdrop-filter: blur(4px);
   top: 0;
   left: 0;
 }
 
 .dropping_conent_item.two .overlay2 {
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   z-index: 1;
@@ -246,22 +249,22 @@
 }
 
 .dropping_conent_item.three .overlay {
-    background: linear-gradient(rgba(255, 0, 0, 18.72%), rgba(0, 0, 0, 0.87));
-    position: absolute;
-    z-index: 2;
-    backdrop-filter: blur(4px);
-    top: 0;
-    left: 0;
-  }
-  
-  .dropping_conent_item.three .overlay2 {
-    backdrop-filter: blur(4px);
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-  }
+  background: linear-gradient(rgba(255, 0, 0, 18.72%), rgba(0, 0, 0, 0.87));
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+  top: 0;
+  left: 0;
+}
+
+.dropping_conent_item.three .overlay2 {
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
 
 .sliderPage.three {
   background: url(../newImages/2781bd8b9c9f811001c778b9dcdeede9.jpeg) !important;
@@ -291,10 +294,10 @@
     width: 90% !important;
   }
   .sliderPage {
-    height: 285px;
+    height: 235px;
   }
   .sliderPage .bottomSlider {
-    height: 30%;
+    height: 27%;
     padding: 0 20px;
   }
 
@@ -515,6 +518,12 @@ body {
   position: relative;
 }
 
+@media (max-width: 769px) {
+  .who_section_content {
+    padding: 0 0 50px 0;
+  }
+}
+
 .who_left_content {
   width: 70%;
   flex-direction: column;
@@ -528,7 +537,7 @@ body {
 
 .who_left_content .second_title {
   width: 100%;
-  font-size: 43px;
+  font-size: 48px;
 }
 
 .who_left_content p {
@@ -550,7 +559,7 @@ body {
 @media (max-width: 769px) {
   .who_left_content .second_title {
     width: 80%;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .who_left_content p {
