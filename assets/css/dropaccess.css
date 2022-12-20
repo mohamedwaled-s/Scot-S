@@ -209,13 +209,16 @@
     padding: 0 0 0 30px;
   }
   .mainSection .leftContent .videoPlayer {
-    width: 100%;
-    max-width: 344px;
+    width: 291px;
+    height: 204px;
+    padding: 0;
+    margin: 20px auto;
   }
   .mainSection .leftContent .videoPlayer2 {
-    width: 100%;
-    max-width: 344px;
-    height: 245px;
+    margin: 20px auto;
+    padding: 0;
+    width: 291px;
+    height: 204px;
   }
   .mainSection .rightContent {
     width: 100%;

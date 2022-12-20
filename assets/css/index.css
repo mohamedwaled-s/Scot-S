@@ -103,7 +103,7 @@
 }
 
 .dropping_conent_item .setting {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .sliderPage .topSlider .topLeft {
@@ -665,7 +665,57 @@ body {
   position: absolute;
   bottom: 4px;
   left: 0;
+  z-index: 5;
   right: 0;
+}
+
+.filled_item_description .setting {
+  cursor: pointer;
+}
+
+.filled_item_description .menu {
+  width: 210px;
+  height: 204px;
+  background-color: #231e22;
+  border-radius: 10px;
+  position: absolute;
+  top: -230px;
+  left: 220px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 16px;
+  overflow: hidden;
+  display: none;
+}
+
+.filled_item_description .menu a {
+  color: white;
+  text-decoration: none;
+  padding: 13px 0 13px 13px;
+}
+
+.filled_item_description .menu .access {
+  background-color: #918f90;
+  color: #070c2e;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 769px) {
+  .filled_item_description .menu {
+    width: 143px;
+    height: 142px;
+    top: -160px;
+    left: 70px;
+    font-size: 12px;
+  }
+  .filled_item_description .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0 10px 13px;
+  }
 }
 
 .filled_item_description p {

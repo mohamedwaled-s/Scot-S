@@ -36,7 +36,17 @@ var swiper_dropping = new Swiper(".mySwiper_dropping", {
   },
 });
 
-var swiper_dropfilled = new Swiper(".mySwiper_dropfilled", {
+var burgerMenu = document.getElementById("burger-menu");
+var overlay = document.getElementById("menu");
+burgerMenu.addEventListener("click", function () {
+  this.classList.toggle("close");
+  overlay.classList.toggle("overlay");
+});
+
+// New Code By Mohamed Waled
+
+// Swiper
+let swiper_dropfilled = new Swiper(".mySwiper_dropfilled", {
   pagination: {
     el: ".swiper-pagination",
   },
@@ -53,9 +63,26 @@ var swiper_dropfilled = new Swiper(".mySwiper_dropfilled", {
   },
 });
 
-var burgerMenu = document.getElementById("burger-menu");
-var overlay = document.getElementById("menu");
-burgerMenu.addEventListener("click", function () {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
-});
+// Menu Button
+
+function menu() {
+  let menuButton = document.querySelectorAll(".menubutton");
+  let menubuttons = Array.from(menuButton);
+  menubuttons.forEach((button) => {
+    button.addEventListener("click", getButton);
+  });
+
+  function getButton() {
+    if (
+      !document.querySelector(this.dataset.click).classList.contains("active")
+    ) {
+      document.querySelector(this.dataset.click).style.display = "flex";
+      document.querySelector(this.dataset.click).classList.add("active");
+    } else {
+      document.querySelector(this.dataset.click).style.display = "none";
+      document.querySelector(this.dataset.click).classList.remove("active");
+    }
+  }
+}
+
+menu();
